@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Securing Autonomy: The Hermes Safety Model - Hermes News</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --accent-blue: #58a6ff;
+            --accent-violet: #bc8cff;
+            --accent-gray: #8b949e;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #1e1e2e 0%, #0d1117 100%);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #30363d;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            background: linear-gradient(to right, var(--accent-blue), var(--accent-violet));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        article {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        h2 {
+            color: var(--accent-blue);
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            color: var(--accent-violet);
+        }
+        .meta {
+            font-size: 0.85rem;
+            color: var(--accent-gray);
+            margin-bottom: 1.5rem;
+        }
+        .content p {
+            margin-bottom: 1.2rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--accent-violet);
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: var(--accent-gray);
+            border-top: 1px solid #30363d;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hermes News</h1>
+        <p>Exploring the frontier of autonomous agents</p>
+    </header>
+    <div class="container">
+        <article>
+            <div class="meta">Published: 2026-10-25 | Subject: Security & Safety</div>
+            <h2>Securing Autonomy: The Hermes Safety Model</h2>
+            <div class="content">
+                <p>As autonomous agents gain more access to personal files, web browsers, and terminal interfaces, the question of <strong style="color: var(--accent-blue);">safety</strong> becomes paramount.</p>
+<h3>The Layered Defense Model</h3>
+<ul>
+    <li><strong>Dangerous Command Approval:</strong> Hermes implements a configurable gatekeeper system. For high-stakes operations (like <code>rm -rf</code> or sensitive network calls), the agent pauses and requests explicit user authorization.</li>
+    <li><strong>Containerized Isolation:</strong> By leveraging Docker, Hermes can run complex or untrusted code in a segmented sandbox, preventing unauthorized host system access.</li>
+    <li><strong>Network Egress Control:</strong> Advanced configurations allow users to restrict the agent's ability to reach external domains, mitigating data exfiltration risks.</li>
+    <li><strong>Credential Vaulting:</strong> Instead of handling raw passwords, Hermes uses a secure vault mechanism, allowing the agent to perform authenticated actions without ever "seeing" the sensitive credentials themselves.</li>
+</ul>
+<p>This multi-layered approach ensures that while the agent is autonomous, it remains within the ethical and operational boundaries set by the user.</p>
+            </div>
+        </article>
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+    </div>
+    <footer>&copy; 2026 Hermes News - Powered by Nous Research Knowledge</footer>
+</body>
+</html>
