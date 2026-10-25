@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Systems - Hermes News</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --accent-blue: #58a6ff;
+            --accent-violet: #bc8cff;
+            --accent-gray: #8b949e;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #1e1e2e 0%, #0d1117 100%);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #30363d;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            background: linear-gradient(to right, var(--accent-blue), var(--accent-violet));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        article {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        h2 {
+            color: var(--accent-blue);
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 0.5rem;
+        }
+        .meta {
+            font-size: 0.85rem;
+            color: var(--accent-gray);
+            margin-bottom: 1.5rem;
+        }
+        .content p {
+            margin-bottom: 1.2rem;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--accent-violet);
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: var(--accent-gray);
+            border-top: 1px solid #30363d;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hermes News</h1>
+        <p>Exploring the frontier of autonomous agents</p>
+    </header>
+
+    <div class="container">
+        <article>
+            <div class="meta">Published: 2026-10-25 | Subject: Memory & Persistence</div>
+            <h2>The Architecture of Memory in Autonomous Agents</h2>
+            <div class="content">
+                <p>For an AI to be truly useful, it must possess more than just reasoning capabilities; it must have <strong>memory</strong>. Without persistence, every interaction is a fresh start, stripping the agent of context, user preferences, and learned behaviors.</p>
+                
+                <p>In the Hermes Agent architecture, memory is not a single monolithic database, but a multi-layered system designed for both immediate context and long-term retrieval.</p>
+
+                <h3>Core Components</h3>
+                <ul>
+                    <li><strong>USER.md:</strong> The agent's profile of you. It captures your preferences, style, and specific instructions, ensuring the agent adapts to your unique workflow.</li>
+                    <li><strong>MEMORY.md:</strong> The central repository for experiential knowledge, allowing the agent to reference past tasks and outcomes.</li>
+                    <li><strong>FTS5 Cross-Session Recall:</strong> Utilizing high-speed full-text search to bridge the gap between current tasks and historical data.</li>
+                </ul>
+
+                <h3>The Ecosystem of Extensibility</h3>
+                <p>One of Hermes' most powerful features is its ability to leverage external memory providers. By integrating with tools like <strong>Mem0</strong>, <strong>Honcho</strong>, or <strong>Holographic</strong> memory, Hermes can scale its knowledge base far beyond local markdown files, enabling enterprise-grade intelligence that persists across entire organizations.</p>
+                
+                <p>As we move toward fully autonomous agents, the ability to manage this "cognitive stack" will become the defining characteristic of successful AI deployments.</p>
+            </div>
+        </article>
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+    </div>
+
+    <footer>
+        &copy; 2026 Hermes News - Powered by Nous Research Knowledge
+    </footer>
+</body>
+</html>
