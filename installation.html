@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started: Installing Hermes - Hermes News</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --accent-blue: #58a6ff;
+            --accent-violet: #bc8cff;
+            --accent-gray: #8b949e;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #1e1e2e 0%, #0d1117 100%);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #30363d;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            background: linear-gradient(to right, var(--accent-blue), var(--accent-violet));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        article {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        h2 {
+            color: var(--accent-blue);
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        h3 {
+            color: var(--accent-violet);
+            margin-top: 1.5rem;
+        }
+        .meta {
+            font-size: 0.85rem;
+            color: var(--accent-gray);
+            margin-bottom: 1.5rem;
+        }
+        .content p {
+            margin-bottom: 1.2rem;
+        }
+        code {
+            background-color: #2d333b;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background-color: #010409;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid #30363d;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--accent-violet);
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: var(--accent-gray);
+            border-top: 1px solid #30363d;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hermes News</h1>
+        <p>Exploring the frontier of autonomous agents</p>
+    </header>
+
+    <div class="container">
+        <article>
+            <div class="meta">Published: 2026-10-26 | Subject: Getting Started</div>
+            <h2>Getting Started: Installing Hermes</h2>
+            <div class            class="content">
+                <p>Ready to experience the power of autonomous agentic workflows? Installing Hermes is designed to be seamless, whether you are a developer or an end-user.</p>
+
+                <h3>1. Prerequisites</h3>
+                <p>Before installing, ensure you have a modern terminal environment and a Python 3.10+ installation. We recommend using a virtual environment to keep your system clean.</p>
+
+                <h3>2. Installation via CLI</h3>
+                <p>The easiest way to get up and running is using the official installation script:</p>
+                <pre><code>curl -sSL https://get.hermes-agent.nousresearch.com | bash</code></pre>
+                <p>Alternatively, you can install the package via pip:</p>
+                <pre><code>pip install hermes-agent</code></pre>
+
+                <h3>3. Initial Configuration</h3>
+                <p>Once installed, you need to set up your environment. The Hermes setup wizard handles model selection, provider configuration, and terminal settings:</p>
+                <pre><code>hermes setup</code></pre>
+                <p>Follow the interactive prompts to connect your preferred LLM provider (e.g., OpenAI, Anthropic, or local models via Ollama).</p>
+
+                <h3>4. Verifying Installation</h3>
+                <p>To ensure everything is working correctly, run the doctor command:</p>
+                <pre><code>hermes doctor</code></pre>
+                <p>If all checks pass, you are ready to start your first session!</p>
+
+                <h3>5. Launching Your First Session</h3>
+                <p>Simply type the following to enter the interactive chat mode:</p>
+                <pre><code>hermes</code></pre>
+            </div>
+        </article>
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+    </div>
+
+    <footer>
+        &copy; 2026 Hermes News - Powered by Nous Research Knowledge
+    </footer>
+</body>
+</html>
