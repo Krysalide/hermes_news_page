@@ -50,9 +50,11 @@
             color: var(--accent-blue);
             border-bottom: 1px solid #30363d;
             padding-bottom: 0.5rem;
+            margin-top: 0;
         }
         h3 {
             color: var(--accent-violet);
+            margin-top: 1.5rem;
         }
         .meta {
             font-size: 0.85rem;
@@ -89,14 +91,14 @@
             <h2>Securing Autonomy: The Hermes Safety Model</h2>
             <div class="content">
                 <p>As autonomous agents gain more access to personal files, web browsers, and terminal interfaces, the question of <strong style="color: var(--accent-blue);">safety</strong> becomes paramount.</p>
-<h3>The Layered Defense Model</h3>
-<ul>
-    <li><strong>Dangerous Command Approval:</strong> Hermes implements a configurable gatekeeper system. For high-stakes operations (like <code>rm -rf</code> or sensitive network calls), the agent pauses and requests explicit user authorization.</li>
-    <li><strong>Containerized Isolation:</strong> By leveraging Docker, Hermes can run complex or untrusted code in a segmented sandbox, preventing unauthorized host system access.</li>
-    <li><strong>Network Egress Control:</strong> Advanced configurations allow users to restrict the agent's ability to reach external domains, mitigating data exfiltration risks.</li>
-    <li><strong>Credential Vaulting:</strong> Instead of handling raw passwords, Hermes uses a secure vault mechanism, allowing the agent to perform authenticated actions without ever "seeing" the sensitive credentials themselves.</li>
-</ul>
-<p>This multi-layered approach ensures that while the agent is autonomous, it remains within the ethical and operational boundaries set by the user.</p>
+                <h3>The Layered Defense Model</h3>
+                <ul>
+                    <li><strong style="color: var(--accent-blue);">Dangerous Command Approval:</strong> Hermes implements a configurable gatekeeper system. For high-stakes operations (like <code>rm -rf</code> or sensitive network calls), the agent pauses and requests explicit user authorization.</li>
+                    <li><strong style="color: var(--accent-blue);">Containerized Isolation:</strong> By leveraging Docker, Hermes can run complex or untrusted code in a segmented sandbox, preventing unauthorized host system access.</li>
+                    <li><strong style="color: var(--accent-blue);">Network Egress Control:</strong> Advanced configurations allow users to restrict the agent's ability to reach external domains, mitigating data exfiltration risks.</li>
+                    <li><strong style="color: var(--accent-blue);">Credential Vaulting:</strong> Instead of handling raw passwords, Hermes uses a secure vault mechanism, allowing the agent to perform authenticated actions without ever "seeing" the sensitive credentials themselves.</li>
+                </ul>
+                <p>This multi-layered approach ensures that while the agent is autonomous, it remains within the ethical and operational boundaries set by the user.</p>
             </div>
         </article>
         <a href="index.html" class="back-link">&larr; Back to Home</a>
